@@ -63,19 +63,18 @@ Requisitos.
 
 <!-- Descripción -->
 #### Descripción.
-Principalmente el objetivo es el rediseño de la apariencia y la estructura de la página de oficial de Optimen S.A de C.V, con la intención de agregar nuevas características, novedosas y funcionales para el funcionamiento y la interacción del usuario. Se busca añadir la disponibilidad de dos idiomas; inglés y español y asi mismo añadir la funcionalidad de “inicio de sesión”, en donde el objetivo será crear vista especial para usuarios que actualizan el contenido como noticias o eventos. De igual manera una vista de “administrador root”(usuario raíz) el cual podrá otorgar los diferentes permisos a los usuarios registrados como creadores de contenido, así también podrá administrar estos usuarios.
+El proyecto consiste en la creación de un sitio web sobre Optimen, el sitio web proporcionará información detallada sobre los últimos avances y noticias respecto a la empresa, así como servicios de consultoría y soporte de configuración sobre el desarrollo de soluciones de software de TI, la página tardara menos de 5 segundos en renderizarse y contara con un editor de noticias y eventos que una serie de usuarios (administrador y creador de contenido) podrán acceder, el administrador podrá manipular los permisos de los usuarios que accedan a esta herramienta, mientras que los creadores de contenido podrán generar, editar, eliminar y consultar noticias y eventos, las noticias y eventos generados se reflejaran en el apartado de noticias de la página principal.
 * Financieros : $9000
 * Tiempos: 3 meses y 21 días (25 de Enero - 14 de Abril)
 
 
 <!-- Objetivos -->
 #### Objetivos.
-El proyecto consiste en el rediseño de la página oficial de la empresa Optimen S.A de C.V. para incluir nuevas funcionalidades que brinden información actualizada sobre la empresa y sus avances en TI. Se busca lograr un sitio web altamente eficiente, con una rápida velocidad de carga para una navegación óptima. El administrador root podrá controlar los permisos de acceso de los usuarios, mientras que los creadores de contenido podrán crear, editar, eliminar y consultar noticias y eventos. Además, las noticias y eventos se mostrarán en la página principal para mantener a los usuarios visitantes informados acerca de las últimas novedades de la empresa.
+Desarrollar una página web optimizada que permita a los visitantes conocer acerca de optimen, la página contara con una sección que permitirá el acceso a administradores y creadores, los administradores darán privilegios a los usuarios que accedan a esta sección, los creadores de contenido podrán generar, editar, consultar y eliminar noticias y eventos, los cambios se verán reflejados en la página principal en el apartado noticias.
 
 <!-- Organigrama -->
 #### Organigrama.
-![image](https://user-images.githubusercontent.com/114689978/230801062-b77f3be3-2947-4682-91a2-e597e14a59ab.png)
-
+![Organigrama](https://user-images.githubusercontent.com/105904645/231126874-8f9fe2a2-bd03-4d76-89a5-4fef3674e0a1.png)
 
 <!-- Diagrama Gantt -->
 #### Diagrama Gantt.
