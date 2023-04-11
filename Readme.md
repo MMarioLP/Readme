@@ -251,15 +251,18 @@ Instalación de dependencias
 Para instalar las dependencias de backend ingresaremos a nuestra carpeta Backend desde nuestra terminal, para ello abriremos una termina nueva con el comando Ctrl + j.
 
 ![r8](https://user-images.githubusercontent.com/105904645/231149920-9d211916-275c-494d-9522-f827f9a73d00.png)
+
 Ilustración 8 Abrir CMD Visual Studio Code.
 
 En la terminal nueva ingresaremos a la carpeta Backend, con el comando cd Backend.
+
 ![r9](https://user-images.githubusercontent.com/105904645/231150334-33a691d0-5ff8-41be-8ed7-8beb7383e57c.png)
 
 Ilustración 9 Comando cd Backend
 
 Una vez ingresado instalaremos las dependencias con el siguiente comando:
 npm i
+
 ![r10](https://user-images.githubusercontent.com/105904645/231150525-5f23c7f2-f215-4a44-8887-3e173b7619d5.png)
 
 El comando comenzara el proceso de instalación, tendremos que esperar hasta que termine para continuar con su ejecución.
@@ -270,6 +273,7 @@ Una vez terminada la instalación de dependencias colocaremos en el mismo CMD el
 npm start
 
 ![r11](https://user-images.githubusercontent.com/105904645/231150950-25b728e6-c425-4b9b-abb4-9da8c7f556a8.png)
+
 Ilustración 11 Comando npm start
 
 Este comando comenzara la ejecución de nuestro backend.
@@ -288,6 +292,7 @@ Es muy probable que nos arroje un error si no tenemos configurado nodemon en nue
 En nuestro PowerShell colocaremos el siguiente comando:
 
 Set-ExecutionPolicy RemoteSigned
+
 ![r14](https://user-images.githubusercontent.com/105904645/231152057-61b9b210-5120-4de1-ae2d-4f086c2cf662.png)
 
 Presionamos enter y contestamos con una S para aprobar las modificaciones,
@@ -310,6 +315,7 @@ Una vez adentro colocaremos el siguiente comando:
 npm i
 
 ![r17](https://user-images.githubusercontent.com/105904645/231153125-575c708c-ba05-4909-971c-e0eb07163e73.png)
+
 Ilustración 14 Comando npm i
 
 Este comando comenzara la descarga de las dependencias, esperaremos a que la instalación finalice.
@@ -320,6 +326,7 @@ npm start
 
 
 ![r18](https://user-images.githubusercontent.com/105904645/231153316-75325b33-85c8-41b0-bbb5-90a63e680db3.png)
+
 Ilustración 15 Comando npm start
 
 Después de esperar un momento se abrirá una pantalla con nuestro proyecto.
@@ -336,29 +343,41 @@ El usuario puede utilizar la barra de navegación de la parte superior de la pan
 
 
 ![v1](https://user-images.githubusercontent.com/105904645/231155345-36909fc8-a613-4ed2-b0d4-86ae18ea48fa.png)
+
 Ilustración 17 Barra de navegación
 
 Presionando en cada una de las opciones lo envía a la pantalla correspondiente.
 Vista
 El usuario puede visualizar las pantallas que se presentan:
+
 Home
+
 ![v2](https://user-images.githubusercontent.com/105904645/231155474-7c128e3b-78db-451b-ab56-5288f89288f9.png)
+
 Ilustración 18 Vista Home
 
 Customers
+
 ![v3](https://user-images.githubusercontent.com/105904645/231155665-39ad24ee-cd81-47e1-a1c3-dc01f3038f70.png)
+
 Ilustración 19 Vista Customers
 
 About Us
- ![v4](https://user-images.githubusercontent.com/105904645/231155858-41736a7f-a449-438e-ab39-27242b1f887b.png)
+
+![v4](https://user-images.githubusercontent.com/105904645/231155858-41736a7f-a449-438e-ab39-27242b1f887b.png)
+
 Ilustración 20 Vista About Us
 
 News
- ![v5](https://user-images.githubusercontent.com/105904645/231156178-4a4c47c8-43c0-401f-9304-36d274c52b6e.png)
+
+![v5](https://user-images.githubusercontent.com/105904645/231156178-4a4c47c8-43c0-401f-9304-36d274c52b6e.png)
+
 Ilustración 21 Vista News
 
 Contact Us
- ![v6](https://user-images.githubusercontent.com/105904645/231156409-e0d5b5ea-a50a-4ee2-a840-e069c8db977b.png)
+
+![v6](https://user-images.githubusercontent.com/105904645/231156409-e0d5b5ea-a50a-4ee2-a840-e069c8db977b.png)
+
 Ilustración 22 Vista Contact Us
 
 Contact Us
@@ -368,14 +387,18 @@ Ingresa a la pantalla Contact Us a través de la barra de navegación.
 La página presenta un formulario, este debe rellenarse con la información que solicita.
 
 ![v7](https://user-images.githubusercontent.com/105904645/231156549-d72e1832-849c-4414-a750-81944e7871dd.png)
+
 Ilustración 23 Formulario sin rellenar
 
 ![8](https://user-images.githubusercontent.com/105904645/231156740-eea82b7e-6dd0-44ac-aafd-fe41bd1bb982.png)
+
 Ilustración 24 Formulario relleno
 
 Visualización de noticias y eventos
 En la vista News se presentan todas las noticias generadas, el usuario puede seleccionar una y se le despliega el contenido en una pantalla nueva.
+
 ![v8](https://user-images.githubusercontent.com/105904645/231157022-9434396d-5e3c-47f2-b99a-5bf3b9cf635f.png)
+
 Ilustración 25 Noticias página News
 
 Para ello el usuario deberá acceder a la vista News y seleccionar la noticia de su interés.
@@ -383,11 +406,14 @@ Traducción
 El usuario tiene acceso a un botón de traducción que se encuentra en la esquina inferior derecha de forma estática (siempre se va a encontrar en el mismo lugar), que permite traducir los contenidos.
 
 ![v9](https://user-images.githubusercontent.com/105904645/231157192-bb5eb469-94bb-423e-af20-2d26da7ee130.png)
+
 Ilustración 26 Botón de traducción.
+
 Para utilizarlo debemos presionar sobre él, esto desplegara las opciones de traducción.
 
 
 ![v10](https://user-images.githubusercontent.com/105904645/231157342-363ca6d9-2671-4c2a-b6dc-87cc1f30c25d.png)
+
 Ilustración 27 Opciones de traducción.
 
 Dependiendo de la opción seleccionada el idioma de la página cambiara entre español (es) o inglés (en).
@@ -401,6 +427,7 @@ Administración de usuarios
 Una vez que el administrador acceda puede escoger entre administrar las noticias y eventos o a sus usuarios, para administrar a sus usuarios se desplegara la siguiente pantalla.
 
 ![v11](https://user-images.githubusercontent.com/105904645/231157581-d1457951-990c-410c-bde6-b379b8f977d3.png)
+
 Ilustración 28 Vista administrar usuarios
 
 En ella puede visualizar, agregar, eliminar y editar a los usuarios.
@@ -414,6 +441,7 @@ Administración de noticias y eventos
 Si el administrador escoge la administración de noticias y eventos le aparecerá la siguiente pantalla.
 
 ![v12](https://user-images.githubusercontent.com/105904645/231158039-c9dee022-9778-49bf-9fee-271977b24b4a.png)
+
 Ilustración 29 Pantalla administrar noticias y eventos
 
 En ella puede visualizar, agregar, eliminar y editar noticias o eventos.
@@ -433,6 +461,7 @@ Administración de noticias y eventos
 Si el administrador escoge la administración de noticias y eventos le aparecerá la siguiente pantalla.
 
 ![v13](https://user-images.githubusercontent.com/105904645/231158425-b620eb40-5572-481f-a5b4-490718199cef.png)
+
 Ilustración 30 Pantalla administrar noticias y eventos
 
 En ella puede visualizar, agregar, eliminar y editar noticias o eventos.
