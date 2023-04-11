@@ -64,7 +64,7 @@ Requisitos.
 <!-- Descripción -->
 #### Descripción.
 El proyecto consiste en la creación de un sitio web sobre Optimen, el sitio web proporcionará información detallada sobre los últimos avances y noticias respecto a la empresa, así como servicios de consultoría y soporte de configuración sobre el desarrollo de soluciones de software de TI, la página tardara menos de 5 segundos en renderizarse y contara con un editor de noticias y eventos que una serie de usuarios (administrador y creador de contenido) podrán acceder, el administrador podrá manipular los permisos de los usuarios que accedan a esta herramienta, mientras que los creadores de contenido podrán generar, editar, eliminar y consultar noticias y eventos, las noticias y eventos generados se reflejaran en el apartado de noticias de la página principal.
-* Financieros : $9000
+* Financieros : $7000
 * Tiempos: 3 meses y 21 días (25 de Enero - 14 de Abril)
 
 
@@ -78,7 +78,7 @@ Desarrollar una página web optimizada que permita a los visitantes conocer acer
 
 <!-- Diagrama Gantt -->
 #### Diagrama Gantt.
-![image](https://user-images.githubusercontent.com/114689978/230801085-b3c3eeb1-1dd4-4e30-98ea-cc5086afceae.png)
+![Gantt](https://user-images.githubusercontent.com/105904645/231132987-61a5e252-b1af-4015-9799-936704842559.png)
 
 
 <!-- Análisis del proyecto -->
@@ -87,20 +87,22 @@ En ésta sección se indicará los artefactos generados en base a la solución.
 
 <!-- Requerimientos -->
 #### Requerimientos.
-![image](https://user-images.githubusercontent.com/114689978/230801047-5201cf6a-d730-4d71-8d00-69619ff19a1a.png)
 
+![DiagaraUML](https://user-images.githubusercontent.com/105904645/231132751-dc49f55d-5a6c-4f38-ae4e-e025dc1ad2a7.png)
 
 <!-- Diagrama de Casos de Uso -->
 #### Diagrama Casos de Uso.
 Creador de contenido
-![image](https://user-images.githubusercontent.com/114689978/230800603-6aad82b3-8da4-450a-93bf-3bc535d55649.png)
 
-Usuario visitante
-![image](https://user-images.githubusercontent.com/114689978/230800671-5d1a9acd-9c09-42b1-b6be-19e5e14db51a.png)
+![CreadorContenido](https://user-images.githubusercontent.com/105904645/231140687-5b083953-2b1f-4725-8ad0-26dfa692fda0.png)
 
 Administrador
 
-![image](https://user-images.githubusercontent.com/114689978/230800684-c7ac7538-7e2e-4c06-bf33-0a83363607fe.png)
+![CasoUsoAdmin](https://user-images.githubusercontent.com/105904645/231140731-ee252cbb-7555-482d-bbf4-50d091f3f988.png)
+
+Usuario Visitante
+
+![Usuario](https://user-images.githubusercontent.com/105904645/231140795-40053e2c-9bb8-41e5-8911-200abc37e568.png)
 
 
 <!-- Diseño del proyecto -->
@@ -108,50 +110,41 @@ Administrador
 En ésta sección se indicará los artefactos generados en base a la solución.
 
 <!-- Modelo Relacional -->
-#### Modelo Relacional.
+#### Modelo No Relacional.
 Esquema de la base de datos (nombre de campo, tipo de datos, restricciones, etc)
-Colección eventos      
-![image](https://user-images.githubusercontent.com/114689978/230801441-5b678d3f-bb11-4a84-b2ef-fdd9a7e88503.png)
+
+
+Colección de usuarios    
+
+![ModelUsuarios](https://user-images.githubusercontent.com/105904645/231142792-6eb120af-90dc-4908-bbfa-b1349adb2ecb.png)
 
 Colección noticias     
-![image](https://user-images.githubusercontent.com/114689978/230801465-93270940-15f1-4c02-9ba1-c1c22552934e.png)
-
-Colección de usuarios     
-![image](https://user-images.githubusercontent.com/114689978/230801477-492b196b-0842-442b-9a66-d9ac5dacbb68.png)
+![ModeloNoticias](https://user-images.githubusercontent.com/105904645/231142964-aad756ce-6ee7-49ac-9a31-f79acf69f944.png)
 
 
-<!-- Diagrama de Clases -->
-#### Diagrama de Clases.
-Evento 
+Colección eventos      
 
-![image](https://user-images.githubusercontent.com/114689978/230801508-4bb73b6f-295a-4a29-b977-e55b87f8bc8d.png)
-
-Noticias 
-
-![image](https://user-images.githubusercontent.com/114689978/230801518-fa29683e-e1c0-4b6c-9cdd-2e52077a18bf.png)
+![ModeloEventos](https://user-images.githubusercontent.com/105904645/231142994-23a9fe6e-072f-48a8-9ac1-720269fb5e7f.png)
 
 
-<!-- Diagrama de Componentes -->
-#### Diagrama de Componentes
-Esquema de los componentes que interactúan (Modelo, Vista, Controlador, Servidor Web, Servidor de base de datos)
 
-![image](https://user-images.githubusercontent.com/114689978/230801793-4bc4700f-82c0-4b81-b813-9c4420163a36.png)
 
 #### Diagrama de actividades
-*Administrador root* 
-El administrador ingresa a la página, posteriormente inicia sesión si proporciona los datos correctos podrá dirigirse a él apartados y brindar permisos y asi mismo podra quitar los permisos, en caso de que el administrador no ingresos los datos correctos la autenticación presentara una falla en el sistema.
+*Administrador* 
+El administrador accede al sitio web e inicia sesión. Si proporciona las credenciales correctas, podrá navegar a diferentes secciones, otorgar y revocar permisos a otros usuarios. Sin embargo, si el administrador no proporciona las credenciales adecuadas, la autenticación fallará y no podrá acceder al sistema como administrador root.
+![DiagramaAdministrador](https://user-images.githubusercontent.com/105904645/231144426-2294758a-b95e-4d6c-920a-2efb93f95d6c.png)
 
-![image](https://user-images.githubusercontent.com/114689978/230805739-ce05f01d-3ae0-4470-966d-cb93b0044058.png)
+*Creador de contenido*
+El creador de contenido accede al sitio web e inicia sesión. Si proporciona las credenciales correctas, podrá navegar a la sección para agregar eventos o noticias nuevas. Sin embargo, si el creador de contenido no proporciona las credenciales adecuadas, la autenticación fallará, impidiendo su acceso al sistema y la posibilidad de realizar modificaciones.
+
+![DiagramaCreador](https://user-images.githubusercontent.com/105904645/231144472-f6b87a61-d400-46fb-8765-6d48ab0f188b.png)
 
 *Usuario visitante*
 El usuario visitante busca la página de optimen oficial y da clik sobre ella para entrar, tendrá la opción de navegar sin problemas dentro de la misma y poder abandonar la página.
 
-![image](https://user-images.githubusercontent.com/114689978/230805814-b14211d3-05d0-4728-8491-f2e63d5e3560.png)
+![DiagramaCreador](https://user-images.githubusercontent.com/105904645/231144538-939eba5f-8409-460d-a837-be1cda421fd7.png)
 
-*Creador de contenido*
-El creador de contenido ingresa a la página, posteriormente inicia sesión si proporciona los datos correctos podrá dirigirse a él apartado de agregar eventos o noticias nuevas, en caso de que el creador de contenido no ingrese los datos correctos la autenticación presentara una falla en el sistema y por lo tanto no podrá hacer modificaciones.
 
-![image](https://user-images.githubusercontent.com/114689978/230805858-715933b7-5574-4c0e-beb0-e8dadfe3a433.png)
 
 <!-- Implementación del proyecto -->
 ## Implementación.
@@ -199,61 +192,257 @@ Antes de utilizar las nuevas funcionalidades de administración de contenido del
 
 <!-- Instalación -->
 ### Instalacion
-Instalación del Software
-1.	Haga clic en el botón verde "Code" en la página del repositorio y seleccione "Download ZIP" para descargar el archivo ZIP del código fuente.
+Proceso de instalación
+Para realizar la instalación debe ingresar al link de nuestro repositorio
+https://github.com/OsmarVillegas/Integradora-Optimen
+Descarga
+Una vez ingresado deberemos descargar el contenido, tenemos dos opciones para realizarlo.
 
-![image](https://user-images.githubusercontent.com/114689978/230803036-cbcbfbb3-b57b-4e2e-98be-bbabbce37f79.png)
+###Instalación opción A
+En la página de nuestro repositorio copiaremos el link.
 
-2.	Descomprima el archivo ZIP descargado en un directorio de su elección.
+ ![R](https://user-images.githubusercontent.com/105904645/231147195-c488b027-878a-477d-b35a-8a1c25f00f99.png)
 
-![image](https://user-images.githubusercontent.com/114689978/230803059-8cca480a-5f69-429c-82d1-bf6135216a85.png)
+Ilustración 1 Link repositorio
+Una vez copiado el link nos dirigiremos a una carpeta de nuestra preferencia que se encuentre vacía.
+Abrimos un CMD con la ubicación de nuestra carpeta, el CMD podemos abrirlo desde nuestra barra de búsquedas de Windows o desde nuestro administrador de archivos colocando CMD, de esta última forma se nos abrirá el CMD directamente en la ubicación del administrador de archivos. 
 
-3.	Abra Visual Studio Code en su computadora y seleccione "File" en la barra de menú superior, luego seleccione "Open Folder". Navegue hasta el directorio donde descomprimió el código fuente y seleccione la carpeta del proyecto.
+Una vez copiado el link nos dirigiremos a una carpeta de nuestra preferencia que se encuentre vacía.
+Abrimos un CMD con la ubicación de nuestra carpeta, el CMD podemos abrirlo desde nuestra barra de búsquedas de Windows o desde nuestro administrador de archivos colocando CMD, de esta última forma se nos abrirá el CMD directamente en la ubicación del administrador de archivos. 
 
-![image](https://user-images.githubusercontent.com/114689978/230803078-a177f7ce-e3e5-40ba-b897-4df7510f95b6.png)
+ ![r2](https://user-images.githubusercontent.com/105904645/231147783-cd16c270-5cac-4332-a149-04f62e7aeded.png)
 
-4.	El proyecto requiere Node.js y npm. Si no los tiene instalados, debe descargarlos e instalarlos antes de continuar, si ya lo tiene puede pasar al paso 5.
+Ilustración 2 CMD en el administrador de archivos.
 
-*	Para instalar Node.js, visite el sitio web de Node.js y descargue la versión adecuada para su sistema operativo. Siga las instrucciones en pantalla para instalar Node.js en su computadora.
+En el cmd abierto colocaremos el siguiente comando:
+git clone url
+Esto comenzara el proceso de instalación de nuestro proyecto.
+Finalmente obtenemos el siguiente resultado.
 
-*	npm se instalará automáticamente cuando instale Node.js.
-Una vez que tenga Node.js y npm instalados, abra una ventana de línea de comandos dentro de Visual Studio Code y navegue hasta el directorio donde descomprimió el código fuente.
+###Instalación opción B
+La segunda forma de instalar el archivo es presionando el botón Code y seleccionando Download ZIP.
+![r3](https://user-images.githubusercontent.com/105904645/231148216-a7246ad7-f8a6-4132-acfc-a823c0513f29.png)
 
-*	Ejecute el comando: npm install para instalar todas las dependencias necesarias.
+Esto nos permitirá descargar nuestro archivo en formato zip, ahora solo deberemos cortarlo y pegarlo en nuestra carpeta para descomprimirlo.
 
-5.	Una vez que se hayan completado los pasos anteriores, puede instalar las dependencias del back-end y front-end. Abra un terminal con el comando: Ctrl + ñ
+![r4](https://user-images.githubusercontent.com/105904645/231148705-8f8a9abe-587b-48e0-8878-5b84d100c9af.png)
+Ilustración 4 Descomprimir archivo zip
 
-![image](https://user-images.githubusercontent.com/114689978/230803263-f69ab093-590b-4863-8823-344d3a197685.png)
+Finalmente obtendremos el mismo resultado.
+![r5](https://user-images.githubusercontent.com/105904645/231148962-a7e7ab9f-9cf9-4057-99a4-b0fff2bf9f52.png)
+Ilustración 5 Resultado proceso de instalación B
+Instalación de dependencias
+Para instalar las dependencias debemos abrir Visual Studio Code en la ubicación de nuestro archivo, para ello podemos abrirlo y entrar a la ubicación de nuestra carpeta o también podemos utilizar nuestro CMD, Abrimos un CMD directamente en la carpeta como lo hemos hecho anteriormente (instalación opción A) y colocamos:
+code .
 
-6.	Entre a la carpeta de back-end usando el siguiente comando: cd back
+![r6](https://user-images.githubusercontent.com/105904645/231149146-e6367765-244e-4778-83f3-5fa108c009f0.png)
 
-![image](https://user-images.githubusercontent.com/114689978/230803285-277776ed-e11a-4ea7-9f6d-8aff96069ce9.png)
+Ilustración 6 CMD comando code .
 
-7. Ahora use el comando npm i para instalar las dependencias necesarias también debe instalar mongoose por lo que debe usar el siguiente comando: npm install mongoose –force y así mismo después se pueda levantar el servidor sin problema. 
+Esto abrirá una ventana de Visual Studio Code directamente en la ubicación de nuestro archivo, ahora solo instalaremos las dependencias.
 
-![image](https://user-images.githubusercontent.com/114689978/230803311-fe3fca7b-d26d-4330-8d34-7180e3e21e01.png)
+![r7](https://user-images.githubusercontent.com/105904645/231149615-a1f1cdce-8b59-4419-900d-3a8548b6aadf.png)
 
-8. Ejecute el comando npm start para iniciar el servidor web, es muy importante que mantengamos un monitoreo constante de este archivo ya que este contiene la conexión a la base de datos.
+Ilustración 7 Pantalla Visual Studio Code.
 
-![image](https://user-images.githubusercontent.com/114689978/230803334-f42d1f8b-fdea-4831-901b-235ec94bdcf1.png)
+###Backend
 
-9. Se abre una pestaña nueva en la cual se usará el siguiente comando: cd frontend para entrar a la carpeta 
-y poder instalar las dependencias.
+Instalación de dependencias
+Para instalar las dependencias de backend ingresaremos a nuestra carpeta Backend desde nuestra terminal, para ello abriremos una termina nueva con el comando Ctrl + j.
 
-![image](https://user-images.githubusercontent.com/114689978/230803355-719fa805-9324-4ae4-aa45-e32124f597cd.png)
+![r8](https://user-images.githubusercontent.com/105904645/231149920-9d211916-275c-494d-9522-f827f9a73d00.png)
+Ilustración 8 Abrir CMD Visual Studio Code.
 
-10. Ahora use el comando npm i para instalar las dependencias necesarias y cuando termine la descarga ahora use el comando npm start para levantar el front-end.
+En la terminal nueva ingresaremos a la carpeta Backend, con el comando cd Backend.
+![r9](https://user-images.githubusercontent.com/105904645/231150334-33a691d0-5ff8-41be-8ed7-8beb7383e57c.png)
 
-![image](https://user-images.githubusercontent.com/114689978/230803399-3d648dfc-a3ad-4f44-aad3-1f28b4f6f0c9.png)
+Ilustración 9 Comando cd Backend
 
-11. Abra su navegador web y vaya a la dirección http://localhost:3000 para acceder al sitio web Optimen.
+Una vez ingresado instalaremos las dependencias con el siguiente comando:
+npm i
+![r10](https://user-images.githubusercontent.com/105904645/231150525-5f23c7f2-f215-4a44-8887-3e173b7619d5.png)
 
-![image](https://user-images.githubusercontent.com/114689978/230803422-a1a44a96-6e00-4d03-a4cb-c3f0aff05e4c.png)
+El comando comenzara el proceso de instalación, tendremos que esperar hasta que termine para continuar con su ejecución.
+Ejecución del backend
 
+Una vez terminada la instalación de dependencias colocaremos en el mismo CMD el siguiente comando:
+
+npm start
+
+![r11](https://user-images.githubusercontent.com/105904645/231150950-25b728e6-c425-4b9b-abb4-9da8c7f556a8.png)
+Ilustración 11 Comando npm start
+
+Este comando comenzara la ejecución de nuestro backend.
+Finalmente nos arrojara el siguiente resultado.
+
+![r12](https://user-images.githubusercontent.com/105904645/231151325-da7d3865-4c41-465f-a353-1cdc5c0cf21a.png)
+Ilustración 12 Resultado ejecución Backend
+
+Es muy importante que mantengamos este archivo ejecutándose en todo el tiempo que utilicemos nuestra aplicación pues de él depende nuestra base de datos.
+
+Problemas con nodemon
+Es muy probable que nos arroje un error si no tenemos configurado nodemon en nuestra computadora, la solución es sencilla y el problema se debe a una configuración especial que tiene nuestra computadora, para solucionarlo deberemos abrir un PowerShell como administrador
+
+![r13](https://user-images.githubusercontent.com/105904645/231151682-5aa7e998-7941-4127-8594-51c79ebe0e99.png)
+
+En nuestro PowerShell colocaremos el siguiente comando:
+
+Set-ExecutionPolicy RemoteSigned
+![r14](https://user-images.githubusercontent.com/105904645/231152057-61b9b210-5120-4de1-ae2d-4f086c2cf662.png)
+
+Presionamos enter y contestamos con una S para aprobar las modificaciones,
+
+![r15](https://user-images.githubusercontent.com/105904645/231152613-1d859f82-abec-4e90-8d39-ecc5239336ce.png)
+
+Con esto ya hemos permitido el acceso a nodemon, solo deberemos volver a ejecutar nuestro servidor con npm start.
+
+###Frontend
+
+Instalación de dependencias
+Para ejecutar nuestro archivo frontend abrimos otra pestaña CMD, ingresaremos a la carpeta de nuestra aplicación con el comando cd Frontend.
+
+
+![Captura de pantalla 2023-04-11 054343](https://user-images.githubusercontent.com/105904645/231152971-1aafb0e0-862a-46ab-8f73-237fd4e8ef8e.png)
+
+Ilustración 13 Comando cd Frontend.
+
+Una vez adentro colocaremos el siguiente comando:
+npm i
+
+![r17](https://user-images.githubusercontent.com/105904645/231153125-575c708c-ba05-4909-971c-e0eb07163e73.png)
+Ilustración 14 Comando npm i
+
+Este comando comenzara la descarga de las dependencias, esperaremos a que la instalación finalice.
+Ejecución del Frontend
+
+Una vez finalizada colocaremos el siguiente comando:
+npm start
+
+
+![r18](https://user-images.githubusercontent.com/105904645/231153316-75325b33-85c8-41b0-bbb5-90a63e680db3.png)
+Ilustración 15 Comando npm start
+
+Después de esperar un momento se abrirá una pantalla con nuestro proyecto.
 ¡Eso es todo! Si ha seguido estos pasos, debería tener una instancia del proyecto Optimen Web Site ejecutándose en su computadora. 
 
 ## Guias
 Guias de Uso.
+
+Visitante
+El rol de visitante es para todos aquellos usuarios que accedan a la página, ellos pueden acceder a los contenidos que se encuentran en las pantallas principales.
+
+Navegación
+El usuario puede utilizar la barra de navegación de la parte superior de la pantalla para navegar entre las diferentes vistas que presenta la página web.
+
+
+![v1](https://user-images.githubusercontent.com/105904645/231155345-36909fc8-a613-4ed2-b0d4-86ae18ea48fa.png)
+Ilustración 17 Barra de navegación
+
+Presionando en cada una de las opciones lo envía a la pantalla correspondiente.
+Vista
+El usuario puede visualizar las pantallas que se presentan:
+Home
+![v2](https://user-images.githubusercontent.com/105904645/231155474-7c128e3b-78db-451b-ab56-5288f89288f9.png)
+Ilustración 18 Vista Home
+
+Customers
+![v3](https://user-images.githubusercontent.com/105904645/231155665-39ad24ee-cd81-47e1-a1c3-dc01f3038f70.png)
+Ilustración 19 Vista Customers
+
+About Us
+ ![v4](https://user-images.githubusercontent.com/105904645/231155858-41736a7f-a449-438e-ab39-27242b1f887b.png)
+Ilustración 20 Vista About Us
+
+News
+ ![v5](https://user-images.githubusercontent.com/105904645/231156178-4a4c47c8-43c0-401f-9304-36d274c52b6e.png)
+Ilustración 21 Vista News
+
+Contact Us
+ ![v6](https://user-images.githubusercontent.com/105904645/231156409-e0d5b5ea-a50a-4ee2-a840-e069c8db977b.png)
+Ilustración 22 Vista Contact Us
+
+Contact Us
+En la pantalla Contact Us el usuario puede rellenar un formulario para comunicarse con la empresa, para ello debe hacer lo siguiente:
+Ingresa a la pantalla Contact Us a través de la barra de navegación.
+
+La página presenta un formulario, este debe rellenarse con la información que solicita.
+
+![v7](https://user-images.githubusercontent.com/105904645/231156549-d72e1832-849c-4414-a750-81944e7871dd.png)
+Ilustración 23 Formulario sin rellenar
+
+![8](https://user-images.githubusercontent.com/105904645/231156740-eea82b7e-6dd0-44ac-aafd-fe41bd1bb982.png)
+Ilustración 24 Formulario relleno
+
+Visualización de noticias y eventos
+En la vista News se presentan todas las noticias generadas, el usuario puede seleccionar una y se le despliega el contenido en una pantalla nueva.
+![v8](https://user-images.githubusercontent.com/105904645/231157022-9434396d-5e3c-47f2-b99a-5bf3b9cf635f.png)
+Ilustración 25 Noticias página News
+
+Para ello el usuario deberá acceder a la vista News y seleccionar la noticia de su interés.
+Traducción
+El usuario tiene acceso a un botón de traducción que se encuentra en la esquina inferior derecha de forma estática (siempre se va a encontrar en el mismo lugar), que permite traducir los contenidos.
+
+![v9](https://user-images.githubusercontent.com/105904645/231157192-bb5eb469-94bb-423e-af20-2d26da7ee130.png)
+Ilustración 26 Botón de traducción.
+Para utilizarlo debemos presionar sobre él, esto desplegara las opciones de traducción.
+
+
+![v10](https://user-images.githubusercontent.com/105904645/231157342-363ca6d9-2671-4c2a-b6dc-87cc1f30c25d.png)
+Ilustración 27 Opciones de traducción.
+
+Dependiendo de la opción seleccionada el idioma de la página cambiara entre español (es) o inglés (en).
+Admin
+El rol de admin es para el encargado de administrar los contenidos y a los usuarios que puedan generar contenido (rol creador de contenido), para acceder a sus funciones deberá autenticarse con una cuenta.
+Logueo
+El administrador debe acceder al siguiente URL:
+http://localhost:3000/login
+Esta URL les desplegará una pantalla de logueo que dará acceso a sus funcionalidades.
+Administración de usuarios
+Una vez que el administrador acceda puede escoger entre administrar las noticias y eventos o a sus usuarios, para administrar a sus usuarios se desplegara la siguiente pantalla.
+
+![v11](https://user-images.githubusercontent.com/105904645/231157581-d1457951-990c-410c-bde6-b379b8f977d3.png)
+Ilustración 28 Vista administrar usuarios
+
+En ella puede visualizar, agregar, eliminar y editar a los usuarios.
+Para agregar un nuevo usuario deberá presionar el botón agregar que se encuentra en la parte inferior derecha de la tabla, esto desplegara un modal que le permitirá rellenar un formulario que agregue al nuevo usuario a la base de datos.
+
+Para editar debe presionar el botón de la fila columna Edit, seleccionando la final de aquel usuario que desea modificar, esto desplegara un formulario que presenta la información del usuario seleccionado y permita editarlos datos del usuario.
+
+Para eliminar deberá presionar el botón de la columna Delete seleccionando el elemento de la fila que desea eliminar.
+Administración de noticias y eventos
+
+Si el administrador escoge la administración de noticias y eventos le aparecerá la siguiente pantalla.
+
+![v12](https://user-images.githubusercontent.com/105904645/231158039-c9dee022-9778-49bf-9fee-271977b24b4a.png)
+Ilustración 29 Pantalla administrar noticias y eventos
+
+En ella puede visualizar, agregar, eliminar y editar noticias o eventos.
+Para agregar un nuevo evento o noticia deberá presionar el botón agregar que se encuentra en la parte inferior derecha de la tabla de cada tabla, esto desplegara un modal que le permitirá rellenar un formulario que agregue a la nueva noticia o a un nuevo evento a la base de datos.
+
+Para editar debe presionar el botón de la fila columna Edit, seleccionando la final de aquel evento o noticia que desea modificar, esto desplegara un formulario que presenta la información de la noticia o evento seleccionado y permita editarlos datos del elemento seleccionado.
+
+Para eliminar deberá presionar el botón de la columna Delete seleccionando el elemento de la fila que desea eliminar.
+
+Creador de contenido
+El rol de creador de contenido es para los encargados de generar contenido que se visualizará en la pantalla News, para acceder a sus funciones deberá autenticarse con una cuenta.
+Logueo
+El creador de contenido debe acceder al siguiente URL:
+http://localhost:3000/login
+Esta URL les desplegará una pantalla de logueo que dará acceso a sus funcionalidades.
+Administración de noticias y eventos
+Si el administrador escoge la administración de noticias y eventos le aparecerá la siguiente pantalla.
+
+![v13](https://user-images.githubusercontent.com/105904645/231158425-b620eb40-5572-481f-a5b4-490718199cef.png)
+Ilustración 30 Pantalla administrar noticias y eventos
+
+En ella puede visualizar, agregar, eliminar y editar noticias o eventos.
+
+Para agregar un nuevo evento o noticia deberá presionar el botón agregar que se encuentra en la parte inferior derecha de la tabla de cada tabla, esto desplegara un modal que le permitirá rellenar un formulario que agregue a la nueva noticia o a un nuevo evento a la base de datos.
+
+Para editar debe presionar el botón de la fila columna Edit, seleccionando la final de aquel evento o noticia que desea modificar, esto desplegara un formulario que presenta la información de la noticia o evento seleccionado y permita editarlos datos del elemento seleccionado.
+
+Para eliminar deberá presionar el botón de la columna Delete seleccionando el elemento de la fila que desea eliminar.
+
 
 ## Contribucion
 Contribucion.
@@ -265,8 +454,6 @@ Licencia.
 Contacto.
 
 ## Participantes
-* [Arvizu Sotelo Fernando]()
-* [Duarte Vázquez José Carlos]()
-* [Espinoza Gómez Abraham Salvador](https://github.com/Abrahames0)
-* [Fuentes Cabrera Itzel Alessandra](https://github.com/ItzelFuentes)
-* [Martínez Aldavera Alma Yesenia](https://github.com/YeseniaMartinez24)
+* [Osmar Israel Villegas Martínez](https://github.com/OsmarVillegas)
+* [Mario Alberto Rangel Márquez](https://github.com/MMarioLP)
+* [Godínez Morales Martin Gabriel](https://github.com/GabrielGM16)
